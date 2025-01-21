@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TravelFlow - Twoje biuro podróży online. Zarezerwuj wymarzone wakacje i odkryj najlepsze oferty turystyczne w Polsce i na świecie."
+    />
+    <meta
+      name="keywords"
+      content="biuro podróży, wakacje, podróże, oferty turystyczne, rezerwacje, hotele, loty"
+    />
+    <meta name="author" content="TravelFlow" />
+    <title>TravelFlow | Spełnij marzenia o idealnych wakacjach!</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .p-custom {
+        padding: 20px 40px;
+      }
+      .custom-mx {
+        margin: 0px 20px;
+      }
+      .custom-max-height {
+        max-height: 24px;
+      }
+      .custom-bg-img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      .custom-footer-heigth {
+        height: 50px;
+      }
+      .myImgAniamtion {
+        background-color: black;
+      }
+      .myImgAniamtion img {
+        transition: opacity 0.3s ease;
+      }
+
+      .myImgAniamtion div {
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="font-size: 18px">
+    <nav class="navbar navbar-expand-xl p-custom user-select-none">
+      <a
+        href="./index.html"
+        class="navbar-brand p-0 m-0 d-flex align-items-center"
+      >
+        <img
+          src="./images/logo.png"
+          alt="logo"
+          class="custom-max-height align-middle"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mx-auto">
+          <a href="./html/oferty.html" class="nav-link px-0 custom-mx"
+            >Oferty</a
+          >
+          <a href="#" class="nav-link px-0 custom-mx">Last Minute</a>
+          <a href="#" class="nav-link px-0 custom-mx">Promocje</a>
+          <a href="#" class="nav-link px-0 custom-mx">Kierunki</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a href="tel:+4822123456" class="nav-link">
+            <img src="./icons/phone.svg" alt="tel-icon" />
+            <span>(+48) 22 123 45 67</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-center">
+            <img src="./icons/favorites.svg" alt="favorites-icon" />
+            <a href="./html/favorites.html" class="nav-link">Ulubione</a>
+          </a>
+          <a href="#" class="nav-link d-flex align-center">
+            <img src="./icons/account.svg" alt="account-icon" />
+            <a id="accountLink" href="./html/login.html" class="nav-link"
+              >Zaloguj się</a
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="m-5 mb-0">
+      <div
+        class="conteiner-fluid rounded custom-bg-img p-5"
+        style="background-image: url(./images/search2.jpg)"
+      >
+        <div class="py-4">
+          <h1 class="text-white">Twoja wymarzona podróż zaczyna się tutaj.</h1>
+        </div>
+        <form action="" class="row m-0 p-4 my-4 rounded bg-white">
+          <div class="col-2">
+            <label for="#input1" class="form-label">Dokąd?</label>
+            <input
+              type="text"
+              class="form-control"
+              id="#input1"
+              placeholder="Turcja"
+            />
+          </div>
+          <div class="col-2">
+            <label for="#input1" class="form-label">Skąd?</label>
+            <input
+              type="text"
+              class="form-control"
+              id="#input1"
+              placeholder="Radom"
+            />
+          </div>
+          <div class="col-3">
+            <label for="#input1" class="form-label">Od kiedy?</label>
+            <input type="date" class="form-control" id="#input1" />
+          </div>
+          <div class="col-3">
+            <label for="#input1" class="form-label">Do kiedy?</label>
+            <input type="date" class="form-control" id="#input1" />
+          </div>
+          <div class="col-1">
+            <label for="#input1" class="form-label">Ile osób?</label>
+            <input
+              type="text"
+              class="form-control"
+              id="#input1"
+              placeholder="2"
+            />
+          </div>
+          <div class="col-1 d-flex">
+            <button
+              type="submit"
+              class="btn btn-custom-accent text-white text w-auto align-self-end flex-fill"
+            >
+              Szukaj
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner rounded mt-4" style="height: 600px">
+          <div class="carousel-item active h-100" data-bs-interval="8000">
+            <div
+              class="w-100 h-100 d-flex custom-bg-img"
+              style="background-image: url(./images/egipt.jpg)"
+            >
+              <div class="align-self-end m-5">
+                <h1 class="text-white">Egipt</h1>
+                <h6 class="text-body opacity-50">
+                  Odkrywaj świat z TravelFlow
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="8000">
+            <div
+              class="w-100 h-100 d-flex custom-bg-img"
+              style="
+                background-image: url(./images/afryka2.jpg);
+                background-position: top;
+              "
+            >
+              <div class="align-self-end m-5">
+                <h1 class="text-white">Afryka</h1>
+                <h6 class="text-light opacity-75">
+                  Odkrywaj świat z TravelFlow
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="8000">
+            <div
+              class="w-100 h-100 d-flex custom-bg-img"
+              style="background-image: url(./images/narty.jpg)"
+            >
+              <div class="align-self-end m-5">
+                <h1 class="text-white">Narty i Snowboard</h1>
+                <h6 class="text-body opacity-50">
+                  Odkrywaj świat z TravelFlow
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="8000">
+            <div
+              class="w-100 h-100 d-flex custom-bg-img"
+              style="background-image: url(./images/polska.jpg)"
+            >
+              <div class="align-self-end m-5">
+                <h1 class="text-white">Polska</h1>
+                <h6 class="text-light opacity-50">
+                  Odkrywaj świat z TravelFlow
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="mt-4 py-4">
+        <h2 class="mb-5">
+          Co wyróżnia
+          <span id="logo-icon"><img src="./favicon.png" alt="icon" /></span>
+          TravelFlow? Poznaj nasze zalety!
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+          <div class="col">
+            <div class="card h-100 p-2 bg-custom-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title mb-4 d-flex align-items-center">
+                  <img
+                    src="./icons/star.svg"
+                    alt="star"
+                    class="me-2"
+                  />Najlepsze oferty na rynku
+                </h5>
+                <p class="card-text">
+                  Dzięki współpracy z setkami hoteli i ośrodków na całym świecie
+                  oferujemy naszym klientom wyjątkowe okazje i zniżki, które nie
+                  są dostępne w żadnym innym miejscu. Przykładowo, w ubiegłym
+                  roku zapewniliśmy ekskluzywne oferty last-minute na wakacje w
+                  Grecji z 30% rabatem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 p-2 bg-custom-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title mb-4 d-flex align-items-center">
+                  <img
+                    src="./icons/lock.svg"
+                    alt="lock"
+                    class="me-2"
+                  />Bezpieczna rezerwacja
+                </h5>
+                <p class="card-text">
+                  Z nami Twoja rezerwacja jest zawsze bezpieczna. Korzystamy z
+                  zaawansowanych technologii ochrony danych, dzięki czemu możesz
+                  być pewien, że Twoje informacje są poufne. Jeśli wystąpią
+                  jakiekolwiek problemy z rezerwacją, nasz zespół wsparcia jest
+                  dostępny 24/7, aby pomóc w ich rozwiązaniu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 p-2 bg-custom-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title mb-4 d-flex align-items-center">
+                  <img
+                    src="./icons/hand-shake.svg"
+                    alt="hand-shake"
+                    class="me-2"
+                  />Indywidualne podejście
+                </h5>
+                <p class="card-text">
+                  Każda podróż jest wyjątkowa – właśnie dlatego pomagamy naszym
+                  klientom dostosować plany podróży do ich potrzeb. Marzysz o
+                  luksusowym hotelu przy plaży czy rodzinnej willi w górach?
+                  Nasz zespół doradców zadba o to, aby wszystko było zgodne z
+                  Twoimi oczekiwaniami.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 p-2 bg-custom-primary text-white">
+              <div class="card-body">
+                <h5 class="card-title mb-4 d-flex align-items-center">
+                  <img
+                    src="./icons/earth.svg"
+                    alt="earth"
+                    class="me-2"
+                  />Szeroki wybór kierunków
+                </h5>
+                <p class="card-text">
+                  Współpracujemy z ponad 500 hotelami i ośrodkami w 50 krajach
+                  na całym świecie. Od słonecznych plaż Hiszpanii, przez
+                  egzotyczne Malediwy, po urokliwe miasteczka we Włoszech –
+                  zawsze znajdziesz coś dla siebie. Nasza oferta obejmuje
+                  zarówno wyjazdy budżetowe, jak i luksusowe podróże.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <h2 class="mb-5">Polecane kierunki</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/bali.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="bali"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Bali
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/portugalia.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="portugalia"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Portugalia
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/turcja.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="turcja"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Turcja
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/wlochy.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="włochy"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Włochy
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/hiszpania.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="hiszpania"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Hiszpania
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/grecja.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="grecja"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Grecja
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/bulgaria.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="bułgaia"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Bułgaria
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="position-relative rounded myImgAniamtion"
+                style="height: 250px; overflow: hidden; cursor: pointer"
+              >
+                <img
+                  src="./images/chorwacja.jpg"
+                  class="img-fluid position-absolute top-50 start-50 translate-middle w-100 h-100"
+                  style="object-fit: cover"
+                  alt="chorwacja"
+                />
+                <div
+                  class="position-absolute z-1 text-white fs-3 top-50 start-50 translate-middle"
+                >
+                  Chorwacja
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 d-flex justify-content-end align-items-center">
+            <button
+              class="btn btn-custom-accent text-white p-2 col-6 col-sm-4 col-md-3 col-lg-2"
+            >
+              <a href="./html/oferty.html" class="nav-link">Sprawdź oferty</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="bg-custom-secondary text-white py-5 rounded">
+        <div class="container">
+          <h2 class="text-center mb-4">Zapisz się na newsletter</h2>
+          <form class="d-flex flex-column align-items-center">
+            <div class="input-group mb-3 w-50">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Podaj swój adres email"
+                required
+              />
+              <button type="submit" class="btn btn-custom-primary">
+                Zapisz się
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="text-dark py-4 fs-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <a href="./index.html" class="d-flex align-items-center">
+                <img
+                  src="./images/logo.png"
+                  alt="TravelFlow Logo"
+                  class="custom-footer-heigth me-2"
+                />
+              </a>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <span>Kontakt:</span>
+              <small
+                ><a href="tel:+48221234567" class="text-dark ms-2"
+                  >(+48) 22 123 45 67</a
+                >
+                <a href="mailto:info@travelflow.pl" class="text-dark ms-2"
+                  >info@travelflow.pl</a
+                ></small
+              >
+            </div>
+            <div
+              class="col-4 text-end d-flex align-items-center justify-content-end"
+            >
+              <div class="d-inline-block">
+                <span>Śledź nas tutaj:</span>
+                <img
+                  src="./icons/facebook.svg"
+                  alt="Facebook"
+                  style="height: 40px; width: 40px"
+                  class="pointer ms-2"
+                />
+
+                <img
+                  src="./icons/twitter.svg"
+                  alt="Twitter"
+                  style="height: 40px; width: 40px"
+                  class="pointer ms-2"
+                />
+
+                <img
+                  src="./icons/instagram.svg"
+                  alt="Instagram"
+                  style="height: 40px; width: 40px"
+                  class="pointer ms-2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4 small d-flex justify-content-center">
+            <a
+              href="./assets/Polityka_Prywatnosci_TravelFlow.pdf"
+              target="_blank"
+              class="text-dark mx-2"
+              >Polityka prywatności</a
+            >
+            <a
+              href="./assets/Regulamin_TravelFlow.pdf"
+              target="_blank"
+              class="text-dark mx-2"
+              >Regulamin</a
+            >
+            <p class="mb-0">
+              &copy; 2025 TravelFlow. Wszelkie prawa zastrzeżone.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</html>

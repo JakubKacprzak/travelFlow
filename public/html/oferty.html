@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TravelFlow - Twoje biuro podróży online. Zarezerwuj wymarzone wakacje i odkryj najlepsze oferty turystyczne w Polsce i na świecie."
+    />
+    <meta
+      name="keywords"
+      content="biuro podróży, wakacje, podróże, oferty turystyczne, rezerwacje, hotele, loty"
+    />
+    <meta name="author" content="TravelFlow" />
+    <title>TravelFlow | Spełnij marzenia o idealnych wakacjach!</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .p-custom {
+        padding: 20px 40px;
+      }
+      .custom-mx {
+        margin: 0px 20px;
+      }
+      .custom-max-height {
+        max-height: 24px;
+      }
+      .custom-bg-img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      .custom-footer-heigth {
+        height: 50px;
+      }
+      .myImgAniamtion {
+        background-color: black;
+      }
+      .myImgAniamtion img {
+        transition: opacity 0.3s ease;
+      }
+
+      .myImgAniamtion div {
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+      .image-container {
+        overflow: hidden;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body style="font-size: 18px">
+    <nav class="navbar navbar-expand-xl p-custom user-select-none">
+      <a
+        href="../index.html"
+        class="navbar-brand p-0 m-0 d-flex align-items-center"
+      >
+        <img
+          src="../images/logo.png"
+          alt="logo"
+          class="custom-max-height align-middle"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mx-auto">
+          <a href="../html/oferty.html" class="nav-link px-0 custom-mx"
+            >Oferty</a
+          >
+          <a href="#" class="nav-link px-0 custom-mx">Last Minute</a>
+          <a href="#" class="nav-link px-0 custom-mx">Promocje</a>
+          <a href="#" class="nav-link px-0 custom-mx">Kierunki</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a href="tel:+4822123456" class="nav-link">
+            <img src="../icons/phone.svg" alt="tel-icon" />
+            <span>(+48) 22 123 45 67</span>
+          </a>
+          <a href="#" class="nav-link d-flex align-center">
+            <img src="../icons/favorites.svg" alt="favorites-icon" />
+            <a href="../html/favorites.html" class="nav-link">Ulubione</a>
+          </a>
+          <a href="#" class="nav-link d-flex align-center">
+            <img src="../icons/account.svg" alt="account-icon" />
+            <a id="accountLink" href="../html/login.html" class="nav-link"
+              >Zaloguj się</a
+            >
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="m-5 mb-0">
+      <main class="container my-5">
+        <h1 class="text-start mb-4">Nasze Oferty</h1>
+        <div id="offers-container" class="row g-4"></div>
+      </main>
+      <section class="bg-custom-secondary text-white py-5 rounded">
+        <div class="container">
+          <h2 class="text-center mb-4">Zapisz się na newsletter</h2>
+          <form class="d-flex flex-column align-items-center">
+            <div class="input-group mb-3 w-50">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Podaj swój adres email"
+                required
+              />
+              <button type="submit" class="btn btn-custom-primary">
+                Zapisz się
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="text-dark py-4 fs-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <a href="../index.html" class="d-flex align-items-center">
+                <img
+                  src="../images/logo.png"
+                  alt="TravelFlow Logo"
+                  class="custom-footer-heigth me-2"
+                />
+              </a>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <span>Kontakt:</span>
+              <small
+                ><a href="tel:+48221234567" class="text-dark ms-2"
+                  >(+48) 22 123 45 67</a
+                >
+                <a href="mailto:info@travelflow.pl" class="text-dark ms-2"
+                  >info@travelflow.pl</a
+                ></small
+              >
+            </div>
+            <div
+              class="col-4 text-end d-flex align-items-center justify-content-end"
+            >
+              <div class="d-inline-block">
+                <span>Śledź nas tutaj:</span>
+                <img
+                  src="../icons/facebook.svg"
+                  alt="Facebook"
+                  style="height: 40px; width: 40px"
+                  class="pointer ms-2"
+                />
+
+                <img
+                  src="../icons/twitter.svg"
+                  alt="Twitter"
+                  style="height: 40px; width: 40px"
+                  class="pointer ms-2"
+                />
+
+                <img
+                  src="../icons/instagram.svg"
+                  alt="Instagram"
+                  style="height: 40px; width: 40px"
+                  class="pointer ms-2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4 small d-flex justify-content-center">
+            <a
+              href="../assets/Polityka_Prywatnosci_TravelFlow.pdf"
+              target="_blank"
+              class="text-dark mx-2"
+              >Polityka prywatności</a
+            >
+            <a
+              href="../assets/Regulamin_TravelFlow.pdf"
+              target="_blank"
+              class="text-dark mx-2"
+              >Regulamin</a
+            >
+            <p class="mb-0">
+              &copy; 2025 TravelFlow. Wszelkie prawa zastrzeżone.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/offers.js"></script>
+  <script src="../js/app.js"></script>
+</html>

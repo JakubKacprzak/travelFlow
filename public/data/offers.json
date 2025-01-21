@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "destination": "Turcja",
+    "pricePerNight": 120,
+    "hotelName": "Turkish Paradise",
+    "image": "../images/offers/turcja.jpg",
+    "rating": 4.5,
+    "description": "Piękny hotel w sercu Turcji, idealny na rodzinne wakacje i romantyczne wypady.",
+    "finalPrice": 840
+  },
+  {
+    "id": 2,
+    "destination": "Egipt",
+    "pricePerNight": 150,
+    "hotelName": "Egyptian Sands",
+    "image": "../images/offers/egipt.jpg",
+    "rating": 4.7,
+    "description": "Luksusowy hotel w Egipcie z widokiem na Morze Czerwone, doskonały dla miłośników nurkowania.",
+    "finalPrice": 1050
+  },
+  {
+    "id": 3,
+    "destination": "Hiszpania",
+    "pricePerNight": 180,
+    "hotelName": "Spanish Sunset",
+    "image": "../images/offers/hiszpania.jpg",
+    "rating": 4.6,
+    "description": "Elegancki hotel z widokiem na plażę, idealny na relaks i zwiedzanie.",
+    "finalPrice": 1260
+  },
+  {
+    "id": 4,
+    "destination": "Włochy",
+    "pricePerNight": 200,
+    "hotelName": "Italian Dream",
+    "image": "../images/offers/wlochy.jpg",
+    "rating": 4.8,
+    "description": "Stylowy hotel w sercu Toskanii z przepyszną włoską kuchnią.",
+    "finalPrice": 1400
+  },
+  {
+    "id": 5,
+    "destination": "Malediwy",
+    "pricePerNight": 400,
+    "hotelName": "Maldivian Bliss",
+    "image": "../images/offers/malediwy.jpg",
+    "rating": 5.0,
+    "description": "Rajska oaza na wodzie z prywatnymi willami, molo oraz łodzią.",
+    "finalPrice": 2800
+  },
+  {
+    "id": 6,
+    "destination": "Grecja",
+    "pricePerNight": 150,
+    "hotelName": "Greek Odyssey",
+    "image": "../images/offers/grecja.jpg",
+    "rating": 4.4,
+    "description": "Przytulny hotel z widokiem na błękitne morze i greckie wyspy.",
+    "finalPrice": 1050
+  },
+  {
+    "id": 7,
+    "destination": "Chorwacja",
+    "pricePerNight": 130,
+    "hotelName": "Croatian Pearl",
+    "image": "../images/offers/chorwacja.jpg",
+    "rating": 4.3,
+    "description": "Urokliwy hotel w pobliżu malowniczych plaż i historycznych miast.",
+    "finalPrice": 910
+  },
+  {
+    "id": 8,
+    "destination": "Portugalia",
+    "pricePerNight": 170,
+    "hotelName": "Portuguese Retreat",
+    "image": "../images/offers/portugalia.jpg",
+    "rating": 4.6,
+    "description": "Nowoczesny hotel z widokiem na ocean i degustacją win.",
+    "finalPrice": 1190
+  },
+  {
+    "id": 9,
+    "destination": "Dominikana",
+    "pricePerNight": 300,
+    "hotelName": "Dominican Paradise",
+    "image": "../images/offers/dominikana.jpg",
+    "rating": 4.9,
+    "description": "Ekskluzywny hotel all-inclusive na karaibskiej plaży z basenem i barami wodnymi.",
+    "finalPrice": 2100
+  },
+  {
+    "id": 10,
+    "destination": "Tajlandia",
+    "pricePerNight": 250,
+    "hotelName": "Thai Serenity",
+    "image": "../images/offers/tajlandia.jpg",
+    "rating": 4.7,
+    "description": "Egzotyczny hotel w tropikalnym raju z luksusowymi udogodnieniami.",
+    "finalPrice": 1750
+  },
+  {
+    "id": 11,
+    "destination": "Sri Lanka",
+    "pricePerNight": 220,
+    "hotelName": "Sri Lankan Pearl",
+    "image": "../images/offers/sri-lanka.jpg",
+    "rating": 4.6,
+    "description": "Malowniczy hotel na wybrzeżu z widokiem na dżunglę i ocean.",
+    "finalPrice": 1540
+  },
+  {
+    "id": 12,
+    "destination": "Meksyk",
+    "pricePerNight": 270,
+    "hotelName": "Mexican Fiesta",
+    "image": "../images/offers/meksyk.jpg",
+    "rating": 4.8,
+    "description": "Energetyczny hotel w pobliżu plaż i historycznych ruin.",
+    "finalPrice": 1890
+  }
+]
