@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("http://localhost:3000/api/offers");
     const offers = await response.json();
-    console.log(JSON.stringify(offers, null, 2)); // Formatowanie z wcięciami
+    console.log(JSON.stringify(offers, null, 2));
   } catch (err) {
     console.error("Error fetching offers:", err);
   }
