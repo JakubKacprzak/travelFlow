@@ -6,13 +6,14 @@ async function updateNavigation() {
     });
 
     const accountLink = document.getElementById("accountLink");
+    const accountText = document.getElementById("accountText");
 
     if (response.ok) {
       const data = await response.json();
-      accountLink.textContent = "Konto";
+      accountText.textContent = "Konto";
       accountLink.href = "../html/account.html";
     } else {
-      accountLink.textContent = "Zaloguj się";
+      accountText.textContent = "Zaloguj się";
       accountLink.href = "../html/login.html";
     }
   } catch (error) {
